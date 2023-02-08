@@ -1,0 +1,27 @@
+nav {
+	background-color: white;
+	display: flex;
+
+}
+
+.information button {
+	background-color: white;
+	border: none;
+	color: gray
+}
+
+.information button:hover {
+	text-decoration: underline;
+}
+
+.tech {
+	display: none;
+}
+
+.app {
+	display: none;
+}
+
+.comp {
+	display: none;
+}
