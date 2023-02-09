@@ -4,26 +4,45 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- stylesheet -->
     <link rel="stylesheet" href="./css/style.css" />
     <title>Home</title>
   </head>
   <body>
+    <!-- navigation -->
     <nav>
-      <div class="information">
-        <button class="infoTech">Technology</button>
-        <button class="infoApp">Application</button>
-        <button class="infoComp">Company</button>
+      <!-- wraps everything in the nav -->
+      <div class="wrapper">
+        <!-- links to other pages -->
+        <div class="information">
+          <button class="infoTech">Technology</button>
+          <button class="infoApp">Application</button>
+          <button class="infoComp">Company</button>
+        </div>
+        <!-- title -->
+        <div class="title">AIR COMPANY</div>
+        <!-- cart button -->
+        <div class="cart">
+          <button>cart</button>
+        </div>
       </div>
-      <span class="title"> AIR COMPANY </span>
-      <button class="cart">cart</button>
     </nav>
-    <main>
+    <!-- main content -->
+    <main class="content">
+      <!-- slogan -->
       <p>
-        We're creating <span>products</span> from CO <span>2</span> to
-        <span>extend life on Earth</span>
+        We're creating
+        <br />
+        <u>products</u> from CO
+        <sub>2</sub>
+        <br />
+        to
+        <u>extend life on Earth</u>
       </p>
-      <button>Our mission</button>
+      <!-- mission button -->
+      <button class="mission">Our mission</button>
     </main>
+    <!-- hidden overlays -->
     <div class="tech"></div>
     <div class="app"></div>
     <div class="comp"></div>

@@ -1,19 +1,73 @@
-nav {
-	background-color: white;
-	display: flex;
-
+/* hides the scroll bar sets font and removes margin */
+body {
+	overflow: hidden;
+	margin: 0;
+	font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
+/* navbar styling */
+/* sets the position and size of the navbar */
+nav {
+	background-color: white;
+	position: fixed;
+	top: 0;
+	right: 0;
+	left: 0;
+	width: 100%;
+	z-index: 100;
+}
+
+/* sets the wrapper up */
+.wrapper {
+	padding: 10px 40px;
+	display: flex;
+	position: relative;
+	z-index: 10;
+	height: 3em;
+	align-items: center;
+}
+
+/* sets up width for the information links */
+.information {
+	width: 40%;
+}
+
+/* styles the information buttons */
 .information button {
 	background-color: white;
 	border: none;
-	color: gray
+	color: gray;
 }
 
+/* styles the hover effect for the information buttons */
 .information button:hover {
 	text-decoration: underline;
 }
 
+/* styles the title in navbar */
+.title {
+	font-size: 24px;
+	display: flex;
+	justify-content: center;
+	width: 20%;
+}
+
+/* cart div */
+.cart {
+	display: flex;
+	justify-content: flex-end;
+	width: 40%;
+}
+
+/* styles cart button */
+.cart button {
+	padding: 5px 10px;
+	background-color: rgb(237, 237, 237);
+	border: none;
+	border-radius: 12px;
+}
+
+/* hover divs */
 .tech {
 	display: none;
 }
@@ -24,4 +78,42 @@ nav {
 
 .comp {
 	display: none;
+}
+
+/* main content */
+/* sets the background image and size */
+main {
+	background-image: url("../images/plane.gif");
+	background-position: center;
+	background-size: cover;
+	height: 100vh;
+}
+
+/* sets the content div*/
+.content {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+/* styles the paragraph in the main div */
+main p {
+	font-size: 40px;
+	margin: 0;
+	font-weight: bold;
+	color: white;
+	font-size: 3em;
+	text-align: center;
+}
+
+/* styles the button in the main div */
+.mission {
+	background-color: rgba(255, 255, 255, 0.5);
+	color: white;
+	margin-top: 50px;
+	padding: 10px;
+	border: 0px;
+	border-radius: 25px;
+	font-size: 1.5em;
 }
